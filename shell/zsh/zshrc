@@ -1,11 +1,12 @@
+# SET VARIABLES
+export DOTFILES_PATH="$HOME/.dotfiles"
+
 # Custom the prompt(s)
 export PROMPT='
 %1~ %L %# '
 
 export RPROMPT='%*'
 
-# SET VARIABLES
-export DOTFILES_PATH="/Users/lg/.dotfiles"
 # Syntax highlight for man pages using bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_CASK_OPTS="--no-quarantine"
