@@ -5,9 +5,18 @@
 - clean: [ '~' ]
 
 - link:
-    ~/.zshrc:
-    ~/.zshenv:
-    ~/.gitconfig:
+    ~/.bash_profile:
+      create: true
+      path: shell/bash/.bash_profile
+    ~/.bashrc:
+      create: true
+      path: shell/bash/.bashrc
+    ~/.zshrc: shell/zsh/zshrc
+    ~/.zshenv: shell/zsh/zshenv
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global:
+      create: true
+      path: git/gitignore_global
     ~/.config/bat:
       create: true
       path: config/bat
@@ -16,15 +25,20 @@
     - ~/Documents/workspace
     - ~/Documents/training
     - ~/Documents/training/personal
-    - ~/Documents/training/labs
+    - ~/Documents/lg
+    - ~/Documents/lg/training
+    - ~/Documents/lg/pentagon
 
 - shell:
-    - command: ./setup_homebrew.zsh
+    - command: ./shell/brew/setup_homebrew.zsh
       stdout: true
       stderr: true
-    - command: ./setup_zsh.zsh
+    - command: ./shell/zsh/setup_zsh.zsh
       stdout: true
       stderr: true
-    - command: ./setup_node.zsh
+    - command: ./langs/java/setup_sdkman.zsh
+      stdout: true
+      stderr: true
+    - command: ./langs/js/setup_node.zsh
       stdout: true
       stderr: true

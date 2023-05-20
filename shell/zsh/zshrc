@@ -1,0 +1,44 @@
+# Custom the prompt(s)
+export PROMPT='
+%1~ %L %# '
+
+export RPROMPT='%*'
+
+# SET VARIABLES
+export DOTFILES_PATH="/Users/lg/.dotfiles"
+# Syntax highlight for man pages using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
+export N_PREFIX="$HOME/.n"
+export PREFIX="$N_PREFIX"
+
+# LOCATIONS TO $path ARRAY
+typeset -U path
+
+# shellcheck disable=SC2206
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
+
+# Change ZSH options 
+
+
+# CREATE ALIASES
+source "$DOTFILES_PATH/shell/init.sh"
+
+# WRITE HANDY FUNCTIONS
+
+function mk(){
+ mkdir -p "$@" && cd "$_" || exit;
+}
+
+tree_level() { ls --tree --level="$*";  }
+
+# Use ZSH plugins
+
+
+
+# ... and Others
