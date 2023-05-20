@@ -11,6 +11,11 @@
     ~/.bashrc:
       create: true
       path: shell/bash/.bashrc
+    ~/.zimrc:
+      create: true
+      path: shell/zim/zimrc
+      relink: true
+      force: true
     ~/.zshrc: shell/zsh/zshrc
     ~/.zshenv: shell/zsh/zshenv
     ~/.gitconfig: git/gitconfig
@@ -40,5 +45,8 @@
       stdout: true
       stderr: true
     - command: ./langs/js/setup_node.zsh
+      stdout: true
+      stderr: true
+    - command: ./config/setup_macos.zsh
       stdout: true
       stderr: true
