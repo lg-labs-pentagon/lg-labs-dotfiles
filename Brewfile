@@ -28,25 +28,25 @@ brew "zsh"
 # Application launcher and productivity software
 cask "alfred"
 # App to build and share containerized applications and microservices
-cask "docker"
+#cask "docker"
 # Online diagram software
-cask "drawio"
+#cask "drawio"
 # Web browser
-cask "google-chrome"
+#cask "google-chrome"
 # Testing client for REST, GraphQL, and HTTP APIs
 cask "httpie"
 # Java IDE by JetBrains
-cask "intellij-idea"
+#cask "intellij-idea"
 # Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
+#cask "iterm2"
 # Online collaborative whiteboard platform
-cask "miro"
+#cask "miro"
 # Collaboration platform for API development
-cask "postman"
+#cask "postman"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Open-source code editor
-cask "visual-studio-code"
+#cask "visual-studio-code"
 mas "Microsoft PowerPoint", id: 462062816
 mas "Notion Web Clipper", id: 1559269364
 mas "WhatsApp", id: 1147396723

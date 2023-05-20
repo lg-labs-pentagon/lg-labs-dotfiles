@@ -14,7 +14,6 @@
     ~/.zimrc:
       create: true
       path: shell/zim/zimrc
-      relink: true
       force: true
     ~/.zshrc: shell/zsh/zshrc
     ~/.zshenv: shell/zsh/zshenv

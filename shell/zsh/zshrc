@@ -61,3 +61,6 @@ fi
 
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/test3/.sdkman"
+[[ -s "/Users/test3/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/test3/.sdkman/bin/sdkman-init.sh"

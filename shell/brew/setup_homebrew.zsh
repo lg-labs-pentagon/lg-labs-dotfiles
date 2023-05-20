@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 
-printf "\n<<< Starting Homebrew Setup >>>\n"
+echo "\n<<< Starting Homebrew Setup >>>\n"
+sudo ln -s /bin/zsh /usr/local/bin
+sudo ln -s /opt/homebrew/bin/zsh /usr/local/bin
 
 if ! exists brew; then
   echo "brew doesn't exists, continuing with install"
