@@ -24,17 +24,20 @@ alias  rm=trash
 
 # Git
 alias gaa="git add -A"
-alias gc='$DOTLY_PATH/bin/dot git commit'
+alias gc="git c"
 alias gca="git add --all && git commit --amend --no-edit"
 alias gco="git checkout"
-alias gd='$DOTLY_PATH/bin/dot git pretty-diff'
+alias gcb="git checkout -b"
+alias gd="git diff --color"
 alias gs="git status -sb"
 alias gf="git fetch --all -p"
-alias gps="git push"
+alias gps="git push -u origin"
 alias gpsf="git push --force"
 alias gpl="git pull --rebase --autostash"
 alias gb="git branch"
-alias gl='$DOTLY_PATH/bin/dot git pretty-log'
+alias gp="git branch"
+alias gl="git log --graph --abbrev-commit --decorate --all"
+grn() { git rebase -i HEAD~"$1";}
 
 # Utils
 alias k='kill -9'
