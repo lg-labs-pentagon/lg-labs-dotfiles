@@ -29,7 +29,7 @@ brew "zsh"
 cask "alfred"
 # App to build and share containerized applications and microservices
 cask "docker"
-# Draw.io is free online diagram software
+# Online diagram software
 cask "drawio"
 # Web browser
 cask "google-chrome"
@@ -37,6 +37,8 @@ cask "google-chrome"
 cask "httpie"
 # Java IDE by JetBrains
 cask "intellij-idea"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Online collaborative whiteboard platform
 cask "miro"
 # Collaboration platform for API development
