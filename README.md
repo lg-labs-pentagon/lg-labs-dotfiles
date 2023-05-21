@@ -1,6 +1,6 @@
 # 🦾 lg-labs dotfiles
 
-<img src="https://www.trustedreviews.com/wp-content/uploads/sites/54/2022/03/Google-location.jpg" align="left" width="192px" height="192px"/>
+<img src="https://pbs.twimg.com/profile_images/1410772782238081029/VO3SPTNV_400x400.jpg" align="left" width="192px" height="192px"/>
 <img align="left" width="0" height="192px" hspace="10"/>
 
 > 👋  Welcome From **lg-labs**! Get the basic Dotfiles.
