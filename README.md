@@ -1,7 +1,7 @@
 # 🦾 lg-labs dotfiles
 
-<img src="https://avatars.githubusercontent.com/u/132143511?s=400&v=4" style="float: left;" width="152px" height="152px" alt="lg-labs-pentagon-logo"/>
-<img style="float: left; margin: 10px;" width="0" height="152px" alt="" src=""/>
+<img src="ttps://avatars.githubusercontent.com/u/132143511?s=400&v=4" align="left" width="192px" height="192px"/>
+<img align="left" width="0" height="192px" hspace="10"/>
 
 > 👋  Welcome From **lg-labs**! Get the basic Dotfiles.
 
