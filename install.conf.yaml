@@ -34,10 +34,10 @@
     - ~/Documents/lg/pentagon
 
 - shell:
-    - command: ./shell/brew/setup_homebrew.zsh
+    - command: ./shell/zsh/setup_zsh.zsh
       stdout: true
       stderr: true
-    - command: ./shell/zsh/setup_zsh.zsh
+    - command: ./shell/brew/setup_homebrew.zsh
       stdout: true
       stderr: true
     - command: ./langs/java/setup_sdkman.zsh
