@@ -19,4 +19,5 @@ git --version
 
 git clone --depth 1 git@github.com:lg-labs-pentagon/lg-labs-dotfiles.git "$DOTFILES_PATH"
 
-."$DOTFILES_PATH"/install
+cd "$DOTFILES_PATH"
+./install
