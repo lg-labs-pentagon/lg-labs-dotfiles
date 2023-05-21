@@ -39,6 +39,11 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
 
+# Automatically open a new Finder window when a volume is mounted
+defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
