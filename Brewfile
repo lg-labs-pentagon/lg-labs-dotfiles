@@ -47,6 +47,5 @@ cask "postman"
 cask "rectangle"
 # Open-source code editor
 cask "visual-studio-code"
-mas "Microsoft PowerPoint", id: 462062816
 mas "Notion Web Clipper", id: 1559269364
 mas "WhatsApp", id: 1147396723
