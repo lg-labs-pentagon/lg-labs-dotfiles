@@ -56,7 +56,7 @@ defaults write com.apple.dock tilesize -int 42
 defaults write com.apple.dock mineffect -string "genie"
 
 # Minimize windows into their application’s icon
-defaults write com.apple.dock minimize-to-application -bool false
+defaults write com.apple.dock minimize-to-application -bool true
 
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
