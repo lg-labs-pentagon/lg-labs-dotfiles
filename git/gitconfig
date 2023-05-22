@@ -15,7 +15,7 @@
 	excludesfile = $HOME/.gitignore_global
 	autocrlf = input
 [commit]
-	gpgsign = false
+	gpgsign = true
 [gpg]
 	program = gpg
 	format = ssh
