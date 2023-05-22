@@ -1,7 +1,7 @@
 [user]
 	name = Luis F. García Q...
 	email = 105936384+luisferlabs@users.noreply.github.com
-	signingkey = None
+	signingkey = /Users/lg/.ssh/id_ed25519.pub
 
 [alias]
 	st = status
