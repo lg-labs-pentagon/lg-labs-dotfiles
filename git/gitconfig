@@ -18,3 +18,4 @@
 	gpgsign = false
 [gpg]
 	program = gpg
+	format = ssh
