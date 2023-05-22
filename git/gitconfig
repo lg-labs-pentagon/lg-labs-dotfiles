@@ -1,0 +1,21 @@
+[user]
+	name = Luis F. García Q...
+	email = 105936384+luisferlabs@users.noreply.github.com
+	signingkey = ~/.ssh/id_ed25519.pub
+
+[alias]
+	st = status
+	c = !git add -A && git commit
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	discard = checkout --
+	ch = checkout
+
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+	format = ssh
