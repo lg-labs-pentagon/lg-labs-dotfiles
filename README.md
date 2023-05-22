@@ -1,4 +1,4 @@
-# 🦾 lg-labs dotfiles
+# 🦾 lg-labs .dotfiles to MacOs Intel
 
 <img src="https://pbs.twimg.com/profile_images/1410772782238081029/VO3SPTNV_400x400.jpg" align="left" width="172px" height="172px"/>
 <img align="left" width="0" height="172px" hspace="10"/>
@@ -15,7 +15,7 @@ For more information, check this pages
 https://lufgarciaqu.medium.com
 
 
-## 🚀 Installation
+## 🚀 Installation to MacOs(Intel)
 
 Execute the [`installer`](installer) from your terminal in order to avoid even having to manually install git!
 
