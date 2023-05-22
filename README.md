@@ -1,4 +1,4 @@
-# 🦾 lg-labs .dotfiles to MacOs Intel
+# 🦾 .dotfiles to MacOs Intel
 
 <img src="https://pbs.twimg.com/profile_images/1410772782238081029/VO3SPTNV_400x400.jpg" align="left" width="172px" height="172px"/>
 <img align="left" width="0" height="172px" hspace="10"/>
