@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+uuid=$(uuidgen | tr '[:upper:]' '[:lower:]')
+echo -n $uuid | pbcopy; pbpaste
+echo $uuid 
+
+osascript -e 'display notification "'"$uuid"'" with title "UUID generated, now Cmd+v ;)"'
