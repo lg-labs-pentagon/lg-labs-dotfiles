@@ -26,7 +26,8 @@ path=(
 )
 
 # Change ZSH options 
-
+zstyle ':zim:zmodule' use 'degit'
+ZIM_HOME=~/.zim
 
 # CREATE ALIASES
 source "$DOTFILES_PATH/shell/init.sh"
@@ -39,14 +40,7 @@ function mk(){
 
 tree_level() { ls --tree --level="$*";  }
 
-# Use ZSH plugins
-
-
-
-# ... and Others
-zstyle ':zim:zmodule' use 'degit'
-ZIM_HOME=~/.zim
-
+# USE ZSH PLUGINS
 
 # Download zimfw plugin manager if missing.
 if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
@@ -54,13 +48,11 @@ if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
       https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
 fi
 
+
+# ... AND OTHERS
 # Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.
 if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
-
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/test3/.sdkman"
-[[ -s "/Users/test3/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/test3/.sdkman/bin/sdkman-init.sh"
