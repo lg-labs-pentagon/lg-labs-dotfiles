@@ -1,0 +1,14 @@
+# Add Locations to $PATH Variables
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Write Handy Functions
+
+function exists() {
+  command -v $1 >/dev/null 2>&1;
+}
+
+

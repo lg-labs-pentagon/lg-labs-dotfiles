@@ -1,0 +1,46 @@
+# SET VARIABLES
+export DOTFILES_PATH="$HOME/.dotfiles"
+
+# Custom the prompt(s)
+export PROMPT='
+%1~ %L %# '
+
+export RPROMPT='%*'
+
+# Syntax highlight for man pages using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
+
+
+# Change ZSH options 
+zstyle ':zim:zmodule' use 'degit'
+ZIM_HOME=~/.zim
+
+# CREATE ALIASES
+source "$DOTFILES_PATH/shell/init.sh"
+
+# WRITE HANDY FUNCTIONS
+
+function mk(){
+ mkdir -p "$@" && cd "$_" || exit;
+}
+
+tree_level() { ls --tree --level="$*";  }
+
+# USE ZSH PLUGINS
+
+# Download zimfw plugin manager if missing.
+if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
+  curl -fsSL --create-dirs -o ${ZIM_HOME}/zimfw.zsh \
+      https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
+fi
+
+
+# ... AND OTHERS
+# Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.
+if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
+  source ${ZIM_HOME}/zimfw.zsh init -q
+fi
+# Initialize modules.
+source ${ZIM_HOME}/init.zsh
