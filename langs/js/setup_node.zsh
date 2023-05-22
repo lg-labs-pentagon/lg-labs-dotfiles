@@ -7,7 +7,6 @@ printf "\n<<< Starting NODE Setup >>>\n"
 # See zshenv for addition to $path array.
 if exists node; then
   echo "Node $(node --version) & NPM $(npm --version) already installed"
-
 else
   echo "Installing Node & NPM with n..."
   n latest
@@ -21,7 +20,7 @@ fi
 #npm install --global typescript
 #npm install --global json-server
 #npm install --global http-server
-#npm install --global trash-cli
+npm install --global trash-cli
 
 echo "Global NPM Packages Installed:"
 npm list --global --depth=0

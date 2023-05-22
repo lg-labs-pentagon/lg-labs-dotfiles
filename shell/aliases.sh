@@ -7,6 +7,7 @@ alias ...="cd ../.."
 alias ~="cd ~"
 alias cls="clear"
 alias dotfiles='cd $DOTFILES_PATH'
+alias dot='./$DOTFILES_PATH/install'
 
 alias exa='exa -laFh --git'
 alias ls='exa'
@@ -44,23 +45,19 @@ alias k='kill -9'
 alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
-alias up='dot package update_all'
+# shellcheck disable=SC2139
+alias uuid="sh $HOME/.uuid_code"
 
 #Directories
 
 # shellcheck disable=SC2139
 alias cdd="cd $HOME/Documents"
 alias cdw="cdd;cd workspace"
-alias cdt="cdw;cd training"
-alias cds="cdw;cd spikes"
-alias ctx="cdd;cd contexts"
-alias org="cdw;cd orange"
-alias cau="cdw;cd autentia"
-alias cdp="cdd;cd personal"
-alias inas="cdp;cd inascol"
-alias onyx="inas"
-alias onyx-api="onyx;cd onyxback"
-alias onyx-web="onyx;cd onyxfront"
+alias lg="cdd;cd lg"
+alias lgt="lg;cd training"
+alias lgl="lg;cd labs"
+alias lg5="lg;cd pentagon"
+alias pentagon="lg5"
 
 #Docker
 alias rmV='docker volume prune -f'

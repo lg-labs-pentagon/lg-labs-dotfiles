@@ -24,14 +24,16 @@
     ~/.config/bat:
       create: true
       path: config/bat
+    ~/.hushlogin: config/utils/hushlogin
+    ~/.uuid_code: shell/utils/uuid_code
 
 - create:
     - ~/Documents/workspace
-    - ~/Documents/training
-    - ~/Documents/training/personal
     - ~/Documents/lg
     - ~/Documents/lg/training
+    - ~/Documents/lg/labs
     - ~/Documents/lg/pentagon
+    - ~/Documents/personal
 
 - shell:
     - command: ./shell/zsh/setup_zsh.zsh
