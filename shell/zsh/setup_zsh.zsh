@@ -6,6 +6,7 @@ printf "\n<<< Starting ZSH Setup >>>\n"
 
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/test/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
+brew bundle --verbose
 
 # https://stackoverflow.com/a/4749368/1341838
 if grep -Fxq '/usr/local/bin/zsh' '/etc/shells'; then
