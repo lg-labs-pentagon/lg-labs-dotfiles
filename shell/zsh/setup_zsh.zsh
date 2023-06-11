@@ -15,6 +15,8 @@ if [ "$SHELL" = '/usr/local/bin/zsh' ]; then
   echo '$SHELL is already /usr/local/bin/zsh'
 else
   echo "Enter user password to change login shell"
+  sudo ln -s /bin/zsh /usr/local/bin
+  sudo ln -s /opt/homebrew/bin/zsh /usr/local/bin
   chsh -s '/usr/local/bin/zsh'
 fi
 
