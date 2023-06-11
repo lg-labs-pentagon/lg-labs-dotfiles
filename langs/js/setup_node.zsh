@@ -15,8 +15,8 @@ fi
 if exists node; then
   echo "Node $(node --version) & NPM $(npm --version) already installed"
 else
-  echo "Installing Node & NPM with n..."
-  #n latest
+  echo "Installing Node & NPM with nvm..."
+  nvm install node
 fi
 
 # Install Global packages
