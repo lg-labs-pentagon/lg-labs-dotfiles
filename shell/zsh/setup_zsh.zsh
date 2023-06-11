@@ -3,6 +3,10 @@
 printf "\n<<< Starting ZSH Setup >>>\n"
 # Installation unnecessary; It's in the Brewfile.
 
+
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/test/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # https://stackoverflow.com/a/4749368/1341838
 if grep -Fxq '/usr/local/bin/zsh' '/etc/shells'; then
   echo '/usr/local/bin/zsh already exists in /etc/shells'
