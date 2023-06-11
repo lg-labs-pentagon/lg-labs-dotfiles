@@ -1,4 +1,5 @@
 # SET VARIABLES
+export ZSH_DISABLE_COMPFIX=true
 export DOTFILES_PATH="$HOME/.dotfiles"
 
 # Custom the prompt(s)
@@ -44,3 +45,7 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
 fi
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/test1/.sdkman"
+[[ -s "/Users/test1/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/test1/.sdkman/bin/sdkman-init.sh"
