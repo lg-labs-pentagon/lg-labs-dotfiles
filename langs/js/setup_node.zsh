@@ -9,8 +9,8 @@ if ! exists nvm; then
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 fi
 
-# Node versions are managed with 'n', which is in the Brewfile.
-# See zshrc for N_PREFIX variable.
+# Node versions are managed with 'NVM.
+# See zshrc for NVM variable.
 # See zshenv for addition to $path array.
 if exists node; then
   echo "Node $(node --version) & NPM $(npm --version) already installed"
@@ -20,7 +20,7 @@ else
 fi
 
 # Install Global packages
-#npm install --global yarn
+npm install --global yarn
 #npm install --global firebase-tools
 #npm install --global @angular/cli
 #npm install --global @ionic/cli
