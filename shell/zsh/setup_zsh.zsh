@@ -1,12 +1,6 @@
 #!/usr/bin/env zsh
 
 printf "\n<<< Starting ZSH Setup >>>\n"
-# Installation unnecessary; It's in the Brewfile.
-
-
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/test/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-brew bundle --verbose
 
 # https://stackoverflow.com/a/4749368/1341838
 if grep -Fxq '/usr/local/bin/zsh' '/etc/shells'; then
@@ -35,3 +29,6 @@ else
   # I'd like for this to work instead.
   # sudo ln -sfv /usr/local/bin/zsh /private/var/select/sh
 fi
+
+# hhttps://www.richdevelops.dev/blog/fixing-compinit-insecure-directories-and-files
+# sudo chmod -R 755 /usr/local/share/zsh/site-functions
